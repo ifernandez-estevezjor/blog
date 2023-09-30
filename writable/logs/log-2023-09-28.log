@@ -1,0 +1,43 @@
+CRITICAL - 2023-09-28 18:54:14 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(226): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(190): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-09-28 18:56:11 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(226): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(190): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+ERROR - 2023-09-28 17:44:19 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'defalut current_timestamp,
+	updated_at timestamp default current_timestamp on up' at line 9 in C:\laragon\www\blog\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\blog\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\laragon\www\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\laragon\www\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\laragon\www\blog\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\laragon\www\blog\app\Database\Migrations\2023-09-28-171307_CreateUsersTable.php(48): CodeIgniter\Database\Forge->createTable('users')
+#5 C:\laragon\www\blog\system\Database\MigrationRunner.php(877): App\Database\Migrations\CreateUsersTable->up()
+#6 C:\laragon\www\blog\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\laragon\www\blog\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\blog\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\blog\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\blog\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+CRITICAL - 2023-09-28 19:55:35 --> include(inc(left-sidebar.php): Failed to open stream: No such file or directory
+in APPPATH\Views\backend\layout\pages-layout.php on line 65.
+ 1 APPPATH\Views\backend\layout\pages-layout.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(inc(left-sidebar.php): Failed to open stream: No such file or directory', 'C:\\laragon\\www\\blog\\app\\Views\\backend\\layout\\pages-layout.php', 65)
+ 2 APPPATH\Views\backend\layout\pages-layout.php(65): include()
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\blog\\app\\Views\\backend\\layout\\pages-layout.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('backend/layout/pages-layout', null, true)
+ 6 SYSTEMPATH\Router\RouteCollection.php(1016): CodeIgniter\View\View->render('example-page', null)
+ 7 SYSTEMPATH\CodeIgniter.php(881): CodeIgniter\Router\RouteCollection::CodeIgniter\Router\{closure}()
+ 8 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-28 23:05:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 23:05:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 23:05:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 23:10:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 23:11:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 23:11:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
